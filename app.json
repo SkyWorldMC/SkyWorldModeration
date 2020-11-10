@@ -1,0 +1,41 @@
+{
+    "name": "SkyWorldModération",
+    "description": "Bot de SkyWorld (OFFICIEL).",
+    "repository": "https://github.com/SkyWorldMC/SkyWorldModeration",
+    "logo": "https://cdn.discordapp.com/app-icons/775747546768343090/56662dc9d85817e2d8f912e0ce29107c.png?size=64",
+    "keywords": ["node", "discord", "youtube"],
+    "image": "heroku/nodejs",
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "env": {
+      "TOKEN": {
+        "description": "The token of your Discord Bot",
+        "required": "true"
+      },
+      "PREFIX": {
+        "description": "The prefix you want to use with the bot.",
+        "required": "true"
+      },
+      "OWNERID": {
+        "description": "Your Discord user ID, needed for some commands...",
+        "required": "true"
+      },
+      "PDDTOKEN": {
+        "description": "To make temp mail feature available on your bot instance, you need your Yandex PDD token",
+        "required": "false"
+      },
+      "HOST": {
+        "description": "Your Lavalink host that must have as port 80. If you don't have a Lavalink host, just leave the value as it is.",
+        "value": "express-lavalink.herokuapp.com",
+        "required": "true"
+      },
+      "HOSTPASSW": {
+        "description": "Your Lavalink host password. If you don't have a Lavalink host, just leave the value as it is.",
+        "value": "youshallnotpass",
+        "required": "true"
+      }
+    }  
+  }
